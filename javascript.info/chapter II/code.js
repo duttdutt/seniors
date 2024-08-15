@@ -127,7 +127,16 @@ message =
  * * AND finds first false, otherwise last true
  * * * a &&= b -> a === false ? a=b : a=a;
  * * * a ||= b -> a === true ? a=b : a=a;
- *
+ */
+
+/* Tasks from 2.10 */
+console.log(null || 2 || undefined); // 2
+console.log(console.log(1) || 2 || console.log(3)); // log 1; 2
+console.log(1 && null && 2); // null
+console.log(console.log(1) && console.log(2)); // log 1; undefined
+console.log(null || (2 && 3) || 4); // 3
+
+/** 2.11 Nullish coalescing operator =========================================
  * * ??
  * * * value, that are not null or undefined
  * * * if both not null|undefined or both null|undefined -> select last value
@@ -137,10 +146,3 @@ console.log(null ?? "text"); // "text"
 console.log("first" ?? "second"); // "second"
 console.log(null ?? undefined); // undefined
 console.log(undefined ?? null); // null
-
-/* Tasks from 2.10 */
-console.log(null || 2 || undefined); // 2
-console.log(console.log(1) || 2 || console.log(3)); // log 1; 2
-console.log(1 && null && 2); // null
-console.log(console.log(1) && console.log(2)); // log 1; undefined
-console.log(null || (2 && 3) || 4); // 3
