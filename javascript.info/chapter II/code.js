@@ -1,8 +1,8 @@
 /** 2.7 Type Conversions =====================================================
  * Types of converting values:
- * @type conversion(explicit)
+ * @paragraph conversion(explicit)
  * * toString(), String(), Number(), Boolean(), Array.from(), Object()
- * @type coercion(implicit/automatic)
+ * @paragraph coercion(implicit/automatic)
  * * concatenation, interpolation, unary plus, multiplying by 1, !, ternary
  */
 console.log(Number("")); // 0
@@ -68,7 +68,6 @@ undefined + 1; // NaN
  * * * used in switch, indexOf()
  * * @section Object.is(v1, v2)
  */
-// ===
 console.log(-0 === +0); // true
 console.log(0.3 === 0.2 + 0.1); // false, floating-point problem
 console.log(Infinity === Infinity); // true
@@ -121,3 +120,27 @@ message =
 			: login == ""
 				? "No login"
 				: "";
+
+/** 2.10 Logical operators ===================================================
+ * * precedence: && > ||
+ * * OR  finds first true, otherwise last false
+ * * AND finds first false, otherwise last true
+ * * * a &&= b -> a === false ? a=b : a=a;
+ * * * a ||= b -> a === true ? a=b : a=a;
+ *
+ * * ??
+ * * * value, that are not null or undefined
+ * * * if both not null|undefined or both null|undefined -> select last value
+ */
+console.log("text" ?? undefined); // "text"
+console.log(null ?? "text"); // "text"
+console.log("first" ?? "second"); // "second"
+console.log(null ?? undefined); // undefined
+console.log(undefined ?? null); // null
+
+/* Tasks from 2.10 */
+console.log(null || 2 || undefined); // 2
+console.log(console.log(1) || 2 || console.log(3)); // log 1; 2
+console.log(1 && null && 2); // null
+console.log(console.log(1) && console.log(2)); // log 1; undefined
+console.log(null || (2 && 3) || 4); // 3
