@@ -1,8 +1,8 @@
 /** 2.7 Type Conversions =====================================================
  * Types of converting values:
- * @paragraph conversion(explicit)
+ * @tutorial conversion(explicit)
  * * toString(), String(), Number(), Boolean(), Array.from(), Object()
- * @paragraph coercion(implicit/automatic)
+ * @tutorial coercion(implicit/automatic)
  * * concatenation, interpolation, unary plus, multiplying by 1, !, ternary
  */
 console.log(Number("")); // 0
@@ -10,14 +10,14 @@ console.log(Number("\n  \t 234251234e3")); // 234251234000
 console.log(Number("\n  \t 234251234p3")); // NaN
 
 /** 2.8 Basic operators, maths ===============================================
- * @paragraph Remainder %
+ * @tutorial Remainder (%)
  * * result of a%b is the remainder of a/b
- * @paragraph Exponentiation **
+ * @tutorial Exponentiation (**)
  * * 2**3 8
  * * can replace Math.pow(x,y)
- * @paragraph Concatenation
+ * @tutorial Concatenation
  * * if any of operands is string -> other is converted to string
- * @paragraph Increment/Decrement
+ * @tutorial Increment/Decrement
  * * prefix returns new value
  * * postfix returns old value
  */
@@ -54,10 +54,10 @@ undefined + 1; // NaN
 " \t \n" - 2; // -2
 
 /** 2.9 Comparisons ==========================================================
- * @paragraph String comparison
+ * @tutorial String comparison
  * * Compared letter-by-letter, but using Unicode
  * * lowercase > UPPERCASE
- * @paragraph Equality
+ * @tutorial Equality
  * * ==(loose), ===(strict), Object.is()
  * * @section ==
  * * * never use ==, because using implicit coercion
@@ -67,6 +67,11 @@ undefined + 1; // NaN
  * * * same types && same value -> equal
  * * * used in switch, indexOf()
  * * @section Object.is(v1, v2)
+ * * * determines whether two values are the same value
+ * * * returns boo
+ * * * * difference between ===:
+ * * * * * Object.is(NaN, NaN); // true
+ * * * * * Object.is(+0, -0); // false
  */
 console.log(-0 === +0); // true
 console.log(0.3 === 0.2 + 0.1); // false, floating-point problem
@@ -123,11 +128,11 @@ message =
 
 /** 2.10 Logical operators ===================================================
  * precedence: && > ||
- * @paragraph ||
+ * @tutorial ||
  * * OR  finds first true, otherwise last false
- * @paragraph &&
+ * @tutorial &&
  * * AND finds first false, otherwise last true
- * @paragraph
+ * @tutorial
  * * a &&= b -> a === false ? a=b : a=a;
  * * a ||= b -> a === true ? a=b : a=a;
  */
@@ -140,7 +145,7 @@ console.log(console.log(1) && console.log(2)); // log 1; undefined
 console.log(null || (2 && 3) || 4); // 3
 
 /** 2.11 Nullish coalescing operator =========================================
- * @paragraph ??
+ * @tutorial ??
  * * value, that are not null or undefined
  * * if both not null|undefined or both null|undefined -> select last value
  */
@@ -151,24 +156,24 @@ console.log(null ?? undefined); // undefined
 console.log(undefined ?? null); // null
 
 /** 2.12 Loops: while && for =================================================
- * @paragraph while
+ * @tutorial while
  * * while (condition) { loop body };
  * * while condition is true -> executing
  * * condition is checked before executing loop body
- * @paragraph do...while
+ * @tutorial do...while
  * * do { loop body } while (condition);
  * * while condition is true -> executing
  * * condition is checked after executing loop body
  * * the code will execute, at least, once
- * @paragraph for
+ * @tutorial for
  * * for (start; condition; step) { loop body };
  * * * start - executed once upon entering the loop;
  * * * condition - checked before each iteration;
  * * * step - executed after the loop body before checking the condition;
  * * * body - executed repeatedly, until the condition becomes |true|.
  *
- * @paragraph break
+ * @tutorial break
  * * terminates the loop
- * @paragraph continue
+ * @tutorial continue
  * * jump to next iteration
  */
