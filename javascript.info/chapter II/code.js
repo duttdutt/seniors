@@ -4,12 +4,10 @@
  * * toString(), String(), Number(), Boolean(), Array.from(), Object()
  * @type coercion(implicit/automatic)
  * * concatenation, interpolation, unary plus, multiplying by 1, !, ternary
-*/
-console.log(Number('')); // 0
-console.log(Number('\n  \t 234251234e3')); // 234251234000
-console.log(Number('\n  \t 234251234p3')); // NaN
-
-
+ */
+console.log(Number("")); // 0
+console.log(Number("\n  \t 234251234e3")); // 234251234000
+console.log(Number("\n  \t 234251234p3")); // NaN
 
 /** 2.8 Basic operators, maths
  * @paragraph Remainder %
@@ -22,16 +20,17 @@ console.log(Number('\n  \t 234251234p3')); // NaN
  * @paragraph Increment/Decrement
  * * prefix returns new value
  * * postfix returns old value
-*/
-console.log(3+3+3+3+3+3+'1'); // '181'
-console.log('1'+3+3+3+3+3+3); // '13333333'
-console.log(3+3+3+'1'+3+3+3); // '91333'
+ */
+console.log(3 + 3 + 3 + 3 + 3 + 3 + "1"); // '181'
+console.log("1" + 3 + 3 + 3 + 3 + 3 + 3); // '13333333'
+console.log(3 + 3 + 3 + "1" + 3 + 3 + 3); // '91333'
 console.log(+true); // 1
-console.log(+'asdf'); // NaN
+console.log(+"asdf"); // NaN
 
 /* Tasks from 2.8 */
 /* The postfix and prefix forms: */
-let a = 1, b = 1;
+let a = 1,
+	b = 1;
 let c = ++a; // 2
 let d = b++; // 1
 /* Assignment result: */
