@@ -52,3 +52,42 @@ true + false; // 1
 null + 1; // 1
 undefined + 1; // NaN
 " \t \n" - 2; // -2
+
+/** 2.9 Comparisons
+ * @paragraph String comparison
+ * * Compared letter-by-letter, but using Unicode
+ * * lowercase > UPPERCASE
+ * @paragraph Equality
+ * * ==(loose), ===(strict), Object.is()
+ * * @section ==
+ * * * never use ==, because using implicit coercion
+ * * @section ===
+ * * * use ===, because not using implicit coercion
+ * * * diff types -> unequal
+ * * * same types && same value -> equal
+ * * * used in switch, indexOf()
+ * * @section Object.is(v1, v2)
+ */
+// ===
+console.log(-0 === +0); // true
+console.log(0.3 === 0.2 + 0.1); // false, floating-point problem
+console.log(Infinity === Infinity); // true
+console.log(NaN === NaN); // false
+console.log(null === undefined); // false, compared types
+console.log(3 === "3"); // false
+console.log([NaN].indexOf(NaN)); // -1(not finded)
+switch (NaN) {
+	case NaN:
+		console.log("test");
+}
+// ==
+console.log(null == undefined); // true, just true
+console.log("0" == 0); // true
+/* Tasks from 2.9 */
+5 > 4; // true
+"apple" > "pineapple"; // false
+"2" > "12"; // true
+undefined == null; // true
+undefined === null; // false
+null == "\n0\n"; // false
+null === +"\n0\n"; // false
