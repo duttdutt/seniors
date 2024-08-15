@@ -83,6 +83,7 @@ switch (NaN) {
 // ==
 console.log(null == undefined); // true, just true
 console.log("0" == 0); // true
+
 /* Tasks from 2.9 */
 5 > 4; // true
 "apple" > "pineapple"; // false
@@ -91,3 +92,32 @@ undefined == null; // true
 undefined === null; // false
 null == "\n0\n"; // false
 null === +"\n0\n"; // false
+
+/* Tasks from 2.10 */
+/* Rewrite to ?: */
+let result;
+// if (a + b < 4) {
+// 	result = "Below";
+// } else {
+// 	result = "Over";
+// }
+a + b < 4 ? (result = "Below") : (result = "Over");
+/* Rewrite to ?: */
+let message, login;
+// if (login == "Employee") {
+// 	message = "Hello";
+// } else if (login == "Director") {
+// 	message = "Greetings";
+// } else if (login == "") {
+// 	message = "No login";
+// } else {
+// 	message = "";
+// }
+message =
+	login == "Employee"
+		? "Hello"
+		: login == "Director"
+			? "Greetings"
+			: login == ""
+				? "No login"
+				: "";
