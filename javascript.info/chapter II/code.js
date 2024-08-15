@@ -1,4 +1,4 @@
-/** 2.7 Type Conversions
+/** 2.7 Type Conversions =====================================================
  * Types of converting values:
  * @type conversion(explicit)
  * * toString(), String(), Number(), Boolean(), Array.from(), Object()
@@ -9,7 +9,7 @@ console.log(Number("")); // 0
 console.log(Number("\n  \t 234251234e3")); // 234251234000
 console.log(Number("\n  \t 234251234p3")); // NaN
 
-/** 2.8 Basic operators, maths
+/** 2.8 Basic operators, maths ===============================================
  * @paragraph Remainder %
  * * result of a%b is the remainder of a/b
  * @paragraph Exponentiation **
@@ -53,7 +53,7 @@ null + 1; // 1
 undefined + 1; // NaN
 " \t \n" - 2; // -2
 
-/** 2.9 Comparisons
+/** 2.9 Comparisons ==========================================================
  * @paragraph String comparison
  * * Compared letter-by-letter, but using Unicode
  * * lowercase > UPPERCASE
