@@ -122,11 +122,14 @@ message =
 				: "";
 
 /** 2.10 Logical operators ===================================================
- * * precedence: && > ||
+ * precedence: && > ||
+ * @paragraph ||
  * * OR  finds first true, otherwise last false
+ * @paragraph &&
  * * AND finds first false, otherwise last true
- * * * a &&= b -> a === false ? a=b : a=a;
- * * * a ||= b -> a === true ? a=b : a=a;
+ * @paragraph
+ * * a &&= b -> a === false ? a=b : a=a;
+ * * a ||= b -> a === true ? a=b : a=a;
  */
 
 /* Tasks from 2.10 */
@@ -137,12 +140,35 @@ console.log(console.log(1) && console.log(2)); // log 1; undefined
 console.log(null || (2 && 3) || 4); // 3
 
 /** 2.11 Nullish coalescing operator =========================================
- * * ??
- * * * value, that are not null or undefined
- * * * if both not null|undefined or both null|undefined -> select last value
+ * @paragraph ??
+ * * value, that are not null or undefined
+ * * if both not null|undefined or both null|undefined -> select last value
  */
 console.log("text" ?? undefined); // "text"
 console.log(null ?? "text"); // "text"
 console.log("first" ?? "second"); // "second"
 console.log(null ?? undefined); // undefined
 console.log(undefined ?? null); // null
+
+/** 2.12 Loops: while && for =================================================
+ * @paragraph while
+ * * while (condition) { loop body };
+ * * while condition is true -> executing
+ * * condition is checked before executing loop body
+ * @paragraph do...while
+ * * do { loop body } while (condition);
+ * * while condition is true -> executing
+ * * condition is checked after executing loop body
+ * * the code will execute, at least, once
+ * @paragraph for
+ * * for (start; condition; step) { loop body };
+ * * * start - executed once upon entering the loop;
+ * * * condition - checked before each iteration;
+ * * * step - executed after the loop body before checking the condition;
+ * * * body - executed repeatedly, until the condition becomes |true|.
+ *
+ * @paragraph break
+ * * terminates the loop
+ * @paragraph continue
+ * * jump to next iteration
+ */
