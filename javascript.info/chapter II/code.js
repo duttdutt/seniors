@@ -177,3 +177,127 @@ console.log(undefined ?? null); // null
  * @tutorial continue
  * * jump to next iteration
  */
+
+/** 2.13 The switch statement =================================================
+ * @tutorial switch
+ * * can replace multiple if statements
+ * * check using strict equality (cannot use NaN)
+ * * default is optional
+ * * no break -> execution continues
+ * * switch's argument and any case could be an expression
+ * * cases could be grouped, that's because they don't have break keyword
+ */
+/* strict equality */
+switch (NaN) {
+	case NaN: // Will not work
+}
+/* expressions in argument and case */
+let switchTest = [1];
+switch (typeof switchTest.includes(1).toString()) {
+	// will work
+	case "string":
+		true;
+		break;
+}
+switch ("string") {
+	// will work
+	case typeof switchTest.includes(1).toString():
+		true;
+		break;
+}
+/* grouping */
+switch (1) {
+	// will work for arguments 1, 2, 3
+	case 1:
+	case 2:
+	case 3:
+		true;
+		break;
+}
+/* no execution after break */
+switch (1) {
+	case 1:
+		break;
+		// eslint-disable-next-line no-unreachable
+		console.log(1); // not execute
+}
+/* no matter where is default if switch gets case */
+switch (1) {
+	default:
+		console.log("default");
+		break;
+	case 1:
+		console.log(1);
+		break;
+	// 1
+}
+/* no matter where is default if switch gets default(break stops all other cases) */
+switch (0) {
+	default:
+		console.log("default");
+		break;
+	case 1:
+		console.log(1);
+		break;
+	// 0
+}
+/* get default case, default doesn't have break, after it goes case? execute this case/cases */
+switch (0) {
+	default:
+		console.log("default");
+	case 1:
+		console.log(1);
+		break;
+	// default 1
+}
+/* not get default case, default doesn't have break, after it goes case? execute only case */
+switch (1) {
+	default:
+		console.log("default");
+	case 1:
+		console.log(1);
+		break; // without -> 1 too
+	// 1
+}
+/* case 2(executed), no break -> execute next, while u will not get break */
+switch (2) {
+	case 2:
+		console.log(2); // 2 and no break -> next is default
+	default:
+		console.log("default");
+		break;
+	case 1:
+		console.log(1);
+		break;
+	// 2 "default"
+}
+
+/* Tasks from 2.10 */
+// Rewrite the "switch" into an "if"
+const browser = "Edge";
+if (browser === "Edge") {
+	console.log("You've got the Edge!");
+} else if (
+	browser === "Chrome" ||
+	browser === "Firefox" ||
+	browser === "Safari" ||
+	browser === "Opera"
+) {
+	console.log("Okay we support these browsers too");
+} else {
+	console.log("We hope that this page looks ok!");
+}
+// Rewrite "if" into "switch"
+const a1 = 2;
+switch (a) {
+	case 0:
+		console.log("0");
+		break;
+	case 1:
+		console.log("1");
+		break;
+	case 2:
+	case 3:
+		console.log("2, 3");
+		break;
+}
