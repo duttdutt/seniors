@@ -126,7 +126,7 @@ message =
 				? "No login"
 				: "";
 
-/** 2.10 Logical operators ===================================================
+/** 2.11 Logical operators ===================================================
  * precedence: && > ||
  * @tutorial ||
  * * OR  finds first true, otherwise last false
@@ -137,14 +137,14 @@ message =
  * * a ||= b -> a === true ? a=b : a=a;
  */
 
-/* Tasks from 2.10 */
+/* Tasks from 2.11 */
 console.log(null || 2 || undefined); // 2
 console.log(console.log(1) || 2 || console.log(3)); // log 1; 2
 console.log(1 && null && 2); // null
 console.log(console.log(1) && console.log(2)); // log 1; undefined
 console.log(null || (2 && 3) || 4); // 3
 
-/** 2.11 Nullish coalescing operator =========================================
+/** 2.12 Nullish coalescing operator =========================================
  * @tutorial ??
  * * value, that are not null or undefined
  * * if both not null|undefined or both null|undefined -> select last value
@@ -155,7 +155,7 @@ console.log("first" ?? "second"); // "second"
 console.log(null ?? undefined); // undefined
 console.log(undefined ?? null); // null
 
-/** 2.12 Loops: while && for =================================================
+/** 2.13 Loops: while && for =================================================
  * @tutorial while
  * * while (condition) { loop body };
  * * while condition is true -> executing
@@ -178,7 +178,7 @@ console.log(undefined ?? null); // null
  * * jump to next iteration
  */
 
-/** 2.13 The switch statement =================================================
+/** 2.14 The switch statement =================================================
  * @tutorial switch
  * * can replace multiple if statements
  * * check using strict equality (cannot use NaN)
@@ -273,7 +273,7 @@ switch (2) {
 	// 2 "default"
 }
 
-/* Tasks from 2.10 */
+/* Tasks from 2.14 */
 // Rewrite the "switch" into an "if"
 const browser = "Edge";
 if (browser === "Edge") {
