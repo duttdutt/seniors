@@ -15,6 +15,7 @@
 - [Simple card game](https://www.codewars.com/kata/53417de006654f4171000587) 15 August
 - [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082) 15 August
 - [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4) 15 August
+- [Persistent Bugger](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1) 16 August
 
 ### 7kyu
 
