@@ -16,6 +16,7 @@
 - [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082) 15 August
 - [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4) 15 August
 - [Persistent Bugger](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1) 16 August
+- [Sum Of Digits](https://www.codewars.com/kata/541c8630095125aba6000c00) 17 August
 
 ### 7kyu
 
