@@ -2,10 +2,10 @@
 
 ## Convential
 
-- (Convential commits)[https://www.conventionalcommits.org/en/v1.0.0/] - convention of commit messages.
+- [Convential commits](https://www.conventionalcommits.org/en/v1.0.0/) - convention of commit messages.
 - Syntax of commit message:
 
-```gitMessage
+```
   <type>[optional scope]: <description>
   [optional description]
   [optional footer]
@@ -180,7 +180,7 @@ module.exports = {
 }
 ```
 
-### Commitlint
+### [Commitlint](https://commitlint.js.org/guides/getting-started.html)
 
 ```bash
 npm i - D @commitlint/cli
