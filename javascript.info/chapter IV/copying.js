@@ -89,3 +89,11 @@ objJson[newSymbol];
 
 const json = JSON.parse(JSON.stringify(objJson));
 console.log(json); // {}
+
+/* for...in with arrays */
+// iterate through inherited props
+const someArr = [1, 2, 3];
+someArr.newProp = "test";
+for (const key in someArr) {
+	console.log("value:", someArr[key]); // 1, 2, 3, "test"
+}
