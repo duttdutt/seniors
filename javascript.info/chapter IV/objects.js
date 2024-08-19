@@ -1,5 +1,5 @@
 /* Objects */
-/** Objects ==================================================================
+/** 4.1 Objects ==============================================================
  * Unordered
  * * because of num props("0")
  * * * solution: create from num props strin props -> "0" "+0", "1", "_1"
@@ -73,3 +73,64 @@ function multiplyNumeric(obj) {
 }
 multiplyNumeric(menu);
 console.log(menu);
+
+/** 4.4 new ==================================================================
+ * constructor functions
+ * * capital letter first
+ * * can omit parenthesis
+ * * executed only with new
+ * * 1. created new object
+ * * 2. execute function body
+ * * 3. returns this
+ * test for constructor new.target
+ * * without new -> undefined
+ * * with new -> function string
+ * return
+ * * if returns new object -> created new object
+ * * if returns primitive -> ignored
+ */
+
+/* Tasks from 4.4 */
+// Two functions – one object
+const obj = {};
+function A() {
+	return obj;
+}
+function B() {
+	return obj;
+}
+console.log(new A() === new B()); // true
+// Create new Calculator
+function Calculator() {
+	this.read = function (a, b) {
+		this.a = a;
+		this.b = b;
+	};
+
+	this.sum = function () {
+		return this.a + this.b;
+	};
+
+	this.mul = function () {
+		return this.a * this.b;
+	};
+}
+const calculator = new Calculator();
+calculator.read(3, 5);
+
+console.log("Sum=" + calculator.sum()); // 8
+console.log("Mul=" + calculator.mul()); // 15
+// Create new Accumulator
+function Accumulator(startingValue) {
+	this.currentValue = startingValue;
+
+	this.read = function (value) {
+		this.currentValue += value;
+	};
+}
+let accumulator = new Accumulator(100); // initial value 1
+
+accumulator.read(10); // adds the user-entered value
+accumulator.read(100); // adds the user-entered value
+
+console.log(accumulator.currentValue); // 210

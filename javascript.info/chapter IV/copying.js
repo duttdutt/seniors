@@ -54,7 +54,9 @@ Object.assign(cloneAssignObject, mainObject);
 console.log(cloneAssignObject === mainObject); // false, different!
 console.log(cloneAssignObject.c === mainObject.c); // true, not copied nested object
 console.log(cloneAssignObject.arr === mainObject.arr); // true, not copied nested array
+
 /* Clonning: nested copy */
+// structuredClone
 console.log("===structuredClone===");
 delete mainObject.c.f; // exception with methods
 const cloneStructuredcloneObject = structuredClone(mainObject);
@@ -62,7 +64,7 @@ const cloneStructuredcloneObject = structuredClone(mainObject);
 console.log(cloneStructuredcloneObject === mainObject); // false, different!
 console.log(cloneStructuredcloneObject.c === mainObject.c); // false, different!
 console.log(cloneStructuredcloneObject.arr === mainObject.arr); // false, different!
-/* Lodash */
+// Lodash
 mainObject.c.f = () => {};
 console.log("===lodash===");
 import _ from "lodash";
@@ -70,7 +72,7 @@ const cloneLodashObject = _.cloneDeep(mainObject);
 console.log(cloneLodashObject === mainObject); // false, different!
 console.log(cloneLodashObject.c === mainObject.c); // false, different!
 console.log(cloneLodashObject.arr === mainObject.arr); // false, different!
-/* JSON.parse(JSON.stringify()) */
+// JSON.parse(JSON.stringify())
 console.log("===JSON===");
 const cloneJSONObject = JSON.parse(JSON.stringify(mainObject));
 console.log(cloneJSONObject === mainObject); // false, different!
