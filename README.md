@@ -10,6 +10,7 @@
 ### 5kyu
 
 - [Greed is good](https://www.codewars.com/kata/5270d0d18625160ada0000e4) 15 August
+- [DirectionsReduction](https://www.codewars.com/kata/550f22f4d758534c1100025a) 19 August
 
 ### 6kyu
 
