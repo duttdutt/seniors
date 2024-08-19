@@ -74,7 +74,7 @@ function multiplyNumeric(obj) {
 multiplyNumeric(menu);
 console.log(menu);
 
-/** 4.4 new ==================================================================
+/** 4.5 new ==================================================================
  * constructor functions
  * * capital letter first
  * * can omit parenthesis
@@ -134,3 +134,35 @@ accumulator.read(10); // adds the user-entered value
 accumulator.read(100); // adds the user-entered value
 
 console.log(accumulator.currentValue); // 210
+
+/**
+ * 4.6 Optional chaining =========================================================
+ * * Syntax:
+ * * * object.property?.property
+ * * * object.property?.[expression]
+ * * * object.method?.(arguments)
+ * * trying to access object's property or calls method, and if they doesn't
+ * * exist, evaluates to undefined instead of throwing an error
+ * * * cannot be used on a non-declared root object:
+ * * * * undeclaredVariable?.property; // ReferenceError: not defined
+ * * * can be used to call a method, which may not exist(API with unavailable
+ * * * method/feature isn't available on user's device):
+ * * * * const result = someInterface.customMethod?.(args);
+ * * * can be used with computed properties
+ * * * can be used with arrays
+ * * * can be used with nullish coalescing operator
+ */
+/* Computed props */
+const obj1 = { propName: 3 };
+const nestedProp = obj1?.["prop" + "Name"];
+console.log(nestedProp); // 3
+/* Arrays */
+const arr = [1, 2, 3, 4];
+function printMagicIndex(arr) {
+	return arr?.[2];
+}
+console.log(printMagicIndex(arr)); // 3
+/* Nullish operator */
+const customer = {};
+const customerCity = customer?.city ?? "Unknown city";
+console.log(customerCity); // "Unknown city"
