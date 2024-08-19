@@ -24,3 +24,4 @@
 
 - [Training time](https://www.codewars.com/kata/572ab0cfa3af384df7000ff8) 15 August
 - [HowMany](https://www.codewars.com/kata/5a00e01cf96fb70001cfa659) 16 August
+- [MyLanguageSkills](www.codewars.com/kata/5b16490986b6d336c900007d) 19 August
