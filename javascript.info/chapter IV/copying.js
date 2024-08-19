@@ -13,6 +13,7 @@
  * * * structuredClone(obj)
  * * * * can't copy methods
  * * * JSON.parse(JSON.stringify(obj)) -> good
+ * * * * functions, symbols, undefined -> null
  * * * lodash _.cloneDeep(obj) -> good
  */
 // Same objects
@@ -78,3 +79,13 @@ const cloneJSONObject = JSON.parse(JSON.stringify(mainObject));
 console.log(cloneJSONObject === mainObject); // false, different!
 console.log(cloneJSONObject.c === mainObject.c); // false, different!
 console.log(cloneJSONObject.arr === mainObject.arr); // false, different!
+// null
+let objJson = {
+	a: undefined,
+	foo() {}
+};
+let newSymbol = Symbol("test");
+objJson[newSymbol];
+
+const json = JSON.parse(JSON.stringify(objJson));
+console.log(json); // {}
