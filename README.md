@@ -3,6 +3,7 @@
 ## JavaScript.info
 
 - [ ] [chapter II](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20II)
+- [ ] [chapter IV](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IV)
 
 ## Codewars
 
