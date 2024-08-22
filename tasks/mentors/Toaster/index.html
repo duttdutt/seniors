@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Toaster Task</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/styles.css" />
+    <!-- JavaScript -->
     <script type="module" src="./src/ui.js"></script>
     <script type="module" src="./src/toaster.js"></script>
   </head>
@@ -15,16 +17,19 @@
     </header>
     <!-- Main -->
     <main>
+      <!-- Images, 1st row -->
       <div id="info">
         <img id="toasts" src="./assets/toasts.png" />
         <img id="working" src="./assets/working.png" />
       </div>
+      <!-- Info, 2nd row -->
       <div>
         <p id="text">Waiting...</p>
         <div id="logs">
           Power: 5<br>Bread: false<br>Heating now: false<br>Elaped time: 0 seconds<br>Rest time: 0 seconds
         </div>
       </div>
+      <!-- Buttons, 3rd row -->
       <ul id="commands">
         <li>
           <button id="insert-bread">Insert bread</button>

@@ -209,18 +209,3 @@ export class Toaster {
 		}
 	}
 }
-
-// const check = new Toster();
-
-// check.setPower(10); //
-// check.insertBread();
-// // check.setTimeLeft(99);
-// // setTimeout(() => {
-// // 	check.logPower();
-// // 	check.changeTime(5);
-// // }, 5000);
-// // // currPower:25
-// // // currPower:25
-// // setTimeout(() => {
-// // 	check.logPower();
-// // }, 10000);

@@ -127,6 +127,7 @@ export function changeLogs() {
 	return "Logs are updated.";
 }
 
+// Some styling
 export function changeStyle() {
 	if (
 		instanceOfToaster.power > 0 &&
