@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/ui.js"></script>
+    <script type="module" src="./src/toaster.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Toaster</h1>
+    </header>
+    <!-- Main -->
+    <main>
+      <div id="info">
+        <img id="toasts" src="./assets/toasts.png" />
+        <img id="working" src="./assets/working.png" />
+      </div>
+      <div>
+        <p id="text">Waiting...</p>
+        <div id="logs">
+          Power: 5<br>Bread: false<br>Heating now: false<br>Elaped time: 0 seconds<br>Rest time: 0 seconds
+        </div>
+      </div>
+      <ul id="commands">
+        <li>
+          <button id="insert-bread">Insert bread</button>
+        </li>
+        <li>
+          <button id="eject-bread">Eject bread</button>
+        </li>
+        <li>
+          <button id="set-power">Set power</button>
+          <input id="set-power-input" type="text" placeholder="Power"></input>
+        </li>
+        <li>
+          <button id="set-timeleft">Set time</button>
+          <input id="set-timeleft-input" type="text" placeholder="Value"></input>
+        </li>
+        <li>
+          <button id="change-time">Change time</button>
+          <input id="change-time-input" type="text" placeholder="Value"></input>
+        </li>
+      </div>
+    </main>
+  </body>
+</html>
