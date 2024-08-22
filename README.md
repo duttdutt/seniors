@@ -20,6 +20,8 @@
 - [Persistent Bugger](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1) 16 August
 - [Sum Of Digits](https://www.codewars.com/kata/541c8630095125aba6000c00) 17 August
 - [Narcissistic Number](https://www.codewars.com/kata/5287e858c6b5a9678200083c) 17 August
+- [Santas Master Plan](https://www.codewars.com/kata/52afd1fe8f7c52a0e1000304)
+  23 August
 
 ### 7kyu
 
