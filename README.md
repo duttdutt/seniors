@@ -19,10 +19,12 @@
 - [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4) 15 August
 - [Persistent Bugger](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1) 16 August
 - [Sum Of Digits](https://www.codewars.com/kata/541c8630095125aba6000c00) 17 August
-- [NarcissisticNumber](https://www.codewars.com/kata/5287e858c6b5a9678200083c) 17 August
+- [Narcissistic Number](https://www.codewars.com/kata/5287e858c6b5a9678200083c) 17 August
 
 ### 7kyu
 
-- [Training time](https://www.codewars.com/kata/572ab0cfa3af384df7000ff8) 15 August
-- [HowMany](https://www.codewars.com/kata/5a00e01cf96fb70001cfa659) 16 August
-- [MyLanguageSkills](www.codewars.com/kata/5b16490986b6d336c900007d) 19 August
+- [Training Time](https://www.codewars.com/kata/572ab0cfa3af384df7000ff8) 15 August
+- [How Many](https://www.codewars.com/kata/5a00e01cf96fb70001cfa659) 16 August
+- [My Language Skills](www.codewars.com/kata/5b16490986b6d336c900007d) 19 August
+- [Sum Even Numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3) 23 August
+- [Unique Sum](https://www.codewars.com/kata/56b1eb19247c01493a000065) 23 August
