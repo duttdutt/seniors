@@ -20,13 +20,13 @@
 - [Persistent Bugger](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1) 16 August
 - [Sum Of Digits](https://www.codewars.com/kata/541c8630095125aba6000c00) 17 August
 - [Narcissistic Number](https://www.codewars.com/kata/5287e858c6b5a9678200083c) 17 August
-- [Santas Master Plan](https://www.codewars.com/kata/52afd1fe8f7c52a0e1000304) 23 August
-- [Unix Style](https://www.codewars.com/kata/52249faee9abb9cefa0001ee)
+- [Santas Master Plan](https://www.codewars.com/kata/52afd1fe8f7c52a0e1000304) 22 August
+- [Unix Style](https://www.codewars.com/kata/52249faee9abb9cefa0001ee) 23 August
 
 ### 7kyu
 
 - [Training Time](https://www.codewars.com/kata/572ab0cfa3af384df7000ff8) 15 August
 - [How Many](https://www.codewars.com/kata/5a00e01cf96fb70001cfa659) 16 August
 - [My Language Skills](www.codewars.com/kata/5b16490986b6d336c900007d) 19 August
-- [Sum Even Numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3) 23 August
-- [Unique Sum](https://www.codewars.com/kata/56b1eb19247c01493a000065) 23 August
+- [Sum Even Numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3) 22 August
+- [Unique Sum](https://www.codewars.com/kata/56b1eb19247c01493a000065) 22 August
