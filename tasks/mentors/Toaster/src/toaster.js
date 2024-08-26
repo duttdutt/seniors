@@ -25,6 +25,7 @@ export class Toaster {
 		this.power = 0; // start power
 		this.timeOfHeating = null;
 		this.isHeating = false;
+		// interval props
 		this.intervalId = null;
 		this.intervalActivated = false;
 		// time
