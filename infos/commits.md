@@ -183,7 +183,7 @@ module.exports = {
 ### [Commitlint](https://commitlint.js.org/guides/getting-started.html)
 
 ```bash
-npm i - D @commitlint/cli
+npm i -D @commitlint/cli
 ```
 
 - Create file `commitlint.config.js`:
