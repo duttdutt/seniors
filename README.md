@@ -30,3 +30,4 @@
 - [My Language Skills](www.codewars.com/kata/5b16490986b6d336c900007d) 19 August
 - [Sum Even Numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3) 22 August
 - [Unique Sum](https://www.codewars.com/kata/56b1eb19247c01493a000065) 22 August
+- [Credit Card Mask](https://www.codewars.com/kata/5412509bd436bd33920011bc) 27 August
