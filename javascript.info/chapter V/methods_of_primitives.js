@@ -1,5 +1,5 @@
 /**
- * @tutorial Methods of primitives 5.1
+ * @tutorial Methods of primitives 5.1 ===========================================================
  * objects are heavier than primitives, because they "cost" more
  * * that's because they could create nested structures and methods
  * but we want to have methods for primitives! but we don't want them to be overloaded,
