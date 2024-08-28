@@ -6,10 +6,10 @@
  * * so how? our primitive value still primitive value, still lightweight, but now it
  * * has methods throw boxing(object wrappers). after we get method, our object-wrapper
  * * will destroy
- * there 5 types for object-wrappers: 'String()', 'Number()', 'Boolean()', 'BigInt()', 'Symbol()'
+ * there 5 types for object-wrr()', 'Boolappers: 'String()', 'Numbeean()', 'BigInt()', 'Symbol()'
  * * 'null' & 'undefined' have no methods(TypeError in any mode)
  * @tutorial Number 5.2
- * can use separater: '1000=1_000'
+ * can use separator: '1000=1_000'
  * can use exponent: '1e3=1000', '2e5=200000', '2e-5=0.000002'
  * can't call method directly on number, like '23423.toString()' -> SyntaxError, so need
  * * to add one more dot, because js engine waits for decimal part. can use: '(23423).toString()'
@@ -19,7 +19,7 @@
  * * * rounds the number to the specified number of digits after dot
  * * * returns string(!); between 0 and 100; if ommitted -> 'digits'=0
  * * @method toPrecision(digits)
- * * * add numbers aftr dot
+ * * * add numbers after dot
  * * * returns string(!); between 1 and 21
  * * @method toString(base)
  * * * if 'base' ommited -> convert number to string, because default base is 10(min2-max36)
@@ -35,9 +35,9 @@
  * * @method Object.is (v1, v2)
  * * * compares two values strictly than '==='
  * * @method parseInt(value)
- * * * read number from 'value', until first non-numeric character.
+ * * * read number from 'value', until first non-numeric character(NaN).
  * * @method parseFloat(value)
- * * * read number from 'value', until first non-numeric character.
+ * * * read number from 'value', until first non-numeric character(NaN).
  * @tutorial String 5.3
  * * UTF-16
  * * can iterate over 'for...of'
