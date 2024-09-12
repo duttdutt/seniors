@@ -41,17 +41,17 @@
  * @tutorial String 5.3
  * * UTF-16
  * * can iterate over 'for...of'
- * * * @method indexOf(str, startPos)
+ * * * @method indexOf (str, startPos)
  * * * * search 'str' in string, returns position or -1
- * * * @method lastIndexOf(str, startPos)
+ * * * @method lastIndexOf (str, startPos)
  * * * * search 'str' in string, returns position or -1
- * * * @method includes(str)
+ * * * @method includes (str)
  * * * * search for 'str' in string, returns boolean
- * * * @method startsWith(str)
- * * * @method endsWith(str)
- * * * @method slice(start, [end])
- * * * @method substr(start, [end]) -> same as slice, but no negative + if 'end > start' -> swap
- * * * @method str1.localeCompare(str2)
+ * * * @method startsWith (str)
+ * * * @method endsWith (str)
+ * * * @method slice (start, [end])
+ * * * @method substr (start, [end]) -> same as slice, but no negative + if 'end > start' -> swap
+ * * * @method str1.localeCompare (str2)
  * * * * -1 if str1 < str2
  * * * * 1 if str1 > str2
  * * * * 0 if str1 === str2
