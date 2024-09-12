@@ -20,20 +20,36 @@
  * * * * array with num will become this num: '[1].toString() === "1"' and '1' is 1
  * * * * array with 2 nums will become 'NaN': '[1,2].toString() -> '1,2' -> 'NaN'
  */
+Array.of(true, 2, 'foo'); // [true,2,'foo]
+Array.of(1); // [1]
+
+Array(1); // [1 empty item]
+Array(10); // [10 empty items]
+Array(1, 2); // [1, 2]
+new Array(1); // [1 empty item]
+new Array(10); // [10 empty items]
+new Array(1, 2); // [1, 2]
+
+Array.from('foo'); // ['f', 'o', 'o']
+Array.from([2, 4, 6], v => v / 2); // [1, 2, 3]
+Array.from(1); // []
+Array.from({}); // []
+Array.from({ a: 1 }); // []
+Array.from({ length: 3 }, (_, i) => i + 1); // [1, 2, 3]
 
 /**
  * @tutorial Array Methods 5.5 =====================================================
- * * @method push() -> add items to the end, returns new length
- * * @method pop() -> extract item from the end, returns elem
- * * @method unshift() -> add items to the beginning, returns new length
- * * @method shift() -> extract item from the beginning, returns elem
- * * @method splice(start, [end], ...pasteElements)
+ * * @method push -> add items to the end, returns new length
+ * * @method pop -> extract item from the end, returns elem
+ * * @method unshift -> add items to the beginning, returns new length
+ * * @method shift -> extract item from the end, returns elem
+ * * @method splice (start, [end], ...pasteElements)
  * * * returns array of deleted elems
  * * * splice(1, 1) -> delete 1 elem
  * * * splice(0, 3, "lol", "kek") -> delete 2 elems and paste 2 new elems
- * * @method slice(start, [end])
+ * * @method slice (start, [end])
  * * * returns new array of delete elems
- * * @method forEach()
+ * * @method forEach
  * * * not chainable, returns nothing
  * * * iterative, non-mutable
  */
