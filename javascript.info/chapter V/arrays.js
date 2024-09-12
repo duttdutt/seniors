@@ -20,7 +20,7 @@
  * * * * array with num will become this num: '[1].toString() === "1"' and '1' is 1
  * * * * array with 2 nums will become 'NaN': '[1,2].toString() -> '1,2' -> 'NaN'
  */
-Array.of(true, 2, 'foo'); // [true,2,'foo]
+Array.of(true, 2, "foo"); // [true,2,'foo]
 Array.of(1); // [1]
 
 Array(1); // [1 empty item]
@@ -30,7 +30,7 @@ new Array(1); // [1 empty item]
 new Array(10); // [10 empty items]
 new Array(1, 2); // [1, 2]
 
-Array.from('foo'); // ['f', 'o', 'o']
+Array.from("foo"); // ['f', 'o', 'o']
 Array.from([2, 4, 6], v => v / 2); // [1, 2, 3]
 Array.from(1); // []
 Array.from({}); // []
