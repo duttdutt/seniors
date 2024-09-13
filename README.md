@@ -22,6 +22,7 @@
 - [Narcissistic Number](https://www.codewars.com/kata/5287e858c6b5a9678200083c) 17 August
 - [Santas Master Plan](https://www.codewars.com/kata/52afd1fe8f7c52a0e1000304) 22 August
 - [Unix Style](https://www.codewars.com/kata/52249faee9abb9cefa0001ee) 23 August
+- [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836) 14 September
 
 ### 7kyu
 
