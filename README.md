@@ -4,6 +4,7 @@
 
 - [ ] [chapter II](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20II)
 - [x] [chapter IV](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IV)
+- [ ] [chapter V](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20V)
 
 ## Codewars
 
