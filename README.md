@@ -33,3 +33,4 @@
 - [Unique Sum](https://www.codewars.com/kata/56b1eb19247c01493a000065) 22 August
 - [Credit Card Mask](https://www.codewars.com/kata/5412509bd436bd33920011bc) 27 August
 - [Highest and Lowers](https://www.codewars.com/kata/554b4ac871d6813a03000035) 14 September
+- [Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/solutions/javascript) 14 September
