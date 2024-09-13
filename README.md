@@ -11,6 +11,7 @@
 
 - [Greed is good](https://www.codewars.com/kata/5270d0d18625160ada0000e4) 15 August
 - [DirectionsReduction](https://www.codewars.com/kata/550f22f4d758534c1100025a) 19 August
+- [Moving Zeros to End](https://www.codewars.com/kata/52597aa56021e91c93000cb0) 14 September
 
 ### 6kyu
 
