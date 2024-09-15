@@ -7,6 +7,15 @@
 - [ ] [chapter V](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20V)
 
 ## Codewars
+### By month
+#### August
+- 5kyu: 2 entries
+- 6kyu: 8 entries
+- 7kyu: 6 entries
+#### September
+- 5kyu: 1 entry
+- 6kyu: 2 entries
+- 7kyu: 4 entries
 
 ### 5kyu
 
