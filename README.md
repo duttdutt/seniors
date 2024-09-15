@@ -9,13 +9,15 @@
 ## Codewars
 ### By month
 #### August
-- 5kyu: 2 entries
-- 6kyu: 8 entries
-- 7kyu: 6 entries
+- _5kyu_: 2 entries
+- _6kyu_: 8 entries
+- _7kyu_: 6 entries
+- **Total**: 16 entries
 #### September
-- 5kyu: 1 entry
-- 6kyu: 2 entries
-- 7kyu: 4 entries
+- _5kyu_: 1 entry
+- _6kyu_: 2 entries
+- _7kyu_: 4 entries
+- **Total**: 7 entries
 
 ### 5kyu
 
