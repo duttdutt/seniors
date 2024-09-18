@@ -16,8 +16,8 @@
 #### September
 - _5kyu_: 1 entry
 - _6kyu_: 2 entries
-- _7kyu_: 4 entries
-- **Total**: 7 entries
+- _7kyu_: 5 entries
+- **Total**: 8 entries
 
 ### 5kyu
 
@@ -50,3 +50,4 @@
 - [Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/solutions/javascript) 14 September
 - [Sum of two lowest](https://www.codewars.com/kata/558fc85d8fd1938afb000014) 14 September
 - [Map Function Issue](https://www.codewars.com/kata/560fbc2d636966b21e00009e) 15 September
+- [Naughty or Nice](https://www.codewars.com/kata/5662b14e0a1fb8320a00005c) 19 September
