@@ -67,12 +67,12 @@ console.log(cloneStructuredcloneObject.c === mainObject.c); // false, different!
 console.log(cloneStructuredcloneObject.arr === mainObject.arr); // false, different!
 // Lodash
 mainObject.c.f = () => {};
-console.log("===lodash===");
-import _ from "lodash";
-const cloneLodashObject = _.cloneDeep(mainObject);
-console.log(cloneLodashObject === mainObject); // false, different!
-console.log(cloneLodashObject.c === mainObject.c); // false, different!
-console.log(cloneLodashObject.arr === mainObject.arr); // false, different!
+// console.log("===lodash===");
+// import _ from "lodash";
+// const cloneLodashObject = _.cloneDeep(mainObject);
+// console.log(cloneLodashObject === mainObject); // false, different!
+// console.log(cloneLodashObject.c === mainObject.c); // false, different!
+// console.log(cloneLodashObject.arr === mainObject.arr); // false, different!
 // JSON.parse(JSON.stringify())
 console.log("===JSON===");
 const cloneJSONObject = JSON.parse(JSON.stringify(mainObject));

@@ -24,7 +24,7 @@ var [a, b] = new Map().set(0, 8).set(1, 9); // a=[0, 8], b=[1, 9]
 // Objects
 var { title, width } = { width: 120, title: 'Task' }
 var { a } = { a:1, b:2, c:3 }
-var { title: t } = { title: 'Task' }
+var { title: t = 3 } = { title: 'Task' }
 const { title = 'Task' } = {}
 // Rest
 var [first, ...rest] = [1, true, false, () => {}];

@@ -1,6 +1,7 @@
 /** JavaScript Object Notation ==============================================
- * double quotes
- *
+ * lightweight text-based data format
+ * double quotes, trailing comma
+ * key/value pairs, separated by commas, curly braces for objects square for arrays
  * @method JSON.stringify() JavaScript -> JSON
  * * Accepts: `value` for serialization, `replacer`{array of function},
  * * * `space`
@@ -104,3 +105,17 @@ const node = { element: 1 };
 node.self = node;
 
 console.log(JSON.stringify(node, ['element']));
+
+// --------- Serialize Map and Set -----------
+const anyData = {
+  setCollection: new Set([1, 2, 3]),
+  mapCollection: new Map([[1, 'first'], [2, 'second']]),
+}
+
+const serializedAnyData = JSON.stringify(anyData, function replacer(k, v) {
+  if (k === 'setCollection') return Array.from(v);
+  if (k === 'mapCollection') return Object.fromEntries(v);
+
+  return v;
+}, 2)
+console.log(serializedAnyData);
