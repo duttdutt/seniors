@@ -39,6 +39,7 @@
 - [Unix Style](https://www.codewars.com/kata/52249faee9abb9cefa0001ee) 23 August
 - [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836) 14 September
 - [Array Diff](https://www.codewars.com/kata/523f5d21c841566fde000009) 14 September
+- [Polish Notation](https://www.codewars.com/kata/5e5b7f55c2e8ae0016f42339) 23 September
 
 ### 7kyu
 
