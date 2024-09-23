@@ -15,16 +15,17 @@
 - _7kyu_: 6 entries
 - **Total**: 16 entries
 #### September
-- _5kyu_: 1 entry
+- _5kyu_: 2 entry
 - _6kyu_: 2 entries
 - _7kyu_: 5 entries
-- **Total**: 8 entries
+- **Total**: 9 entries
 
 ### 5kyu
 
 - [Greed is good](https://www.codewars.com/kata/5270d0d18625160ada0000e4) 15 August
 - [DirectionsReduction](https://www.codewars.com/kata/550f22f4d758534c1100025a) 19 August
 - [Moving Zeros to End](https://www.codewars.com/kata/52597aa56021e91c93000cb0) 14 September
+- [Flatten](https://www.codewars.com/kata/513fa1d75e4297ba38000003) 23 September
 
 ### 6kyu
 
