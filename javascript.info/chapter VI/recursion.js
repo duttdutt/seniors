@@ -1,35 +1,87 @@
-function sumToLoop(n) {
-	let result = 0;
+/** Разворачиваем вложенные массивы без flat()
+ * flatten(1, [2, 3], 4, 5, [6, [7]]) // returns [1, 2, 3, 4, 5, 6, 7]
+ * flatten('a', ['b', 2], 3, null, [[4], ['c']]) // returns ['a', 'b', 2, 3, null, 4, 'c']
+ */
+// Через рекурсию
+function flatten(...args) {
+  return args.reduce(
+    (acc, curr) => acc.concat(Array.isArray(curr) ? flatten(...curr) : curr),
+    []
+  );
+}
+// Через 'стек'
+function flatten(...args) {
+  const result = [];
 
-	for (let i = 1; i <= n; i++) {
-		result += i;
-	}
+  while (args.length) {
+    const el = args.shift(); // last element
 
-	return result;
+    if (Array.isArray(el)) {
+      args.unshift(...el);
+      continue;
+    }
+
+    result.push(el);
+  }
+
+  return result;
 }
 
-function sumToRecursion(n) {
-	if (n === 0) return n;
+/** Глубокое копирование объекта */
+const object = {
+  a: 1,
+  b: {
+    c: {
+      d: [],
+    },
+  },
+};
 
-	return n + sumToRecursion(--n);
+function deepCopy(object) {
+  const deepCopyObject = {};
+
+  for (const prop in object) {
+    if (typeof object[prop] === "object") {
+      deepCopyObject[prop] = deepCopy(object[prop]);
+    } else if (Array.isArray(object[prop])) {
+      deepCopyObject[prop] = object[prop].map((el) => deepCopy(el));
+    } else {
+      deepCopyObject[prop] = object[prop];
+    }
+  }
+
+  return deepCopyObject;
 }
 
-function sumToProgression(n) {
-	return (n * (1 + n)) / 2;
-}
+console.log(object === deepCopy(object));
 
-// Factorial
-function getFactorial(n) {
-	if (n === 0) return 0;
-	if (n === 1) return 1;
+// Снижает нагрузку на стек вызовов и предотвращает переполнение стека
+/* Факториал + Хвостовый факториал */
+function factorial(n) {
+  if (n === 1) return 1;
 
-	return n * getFactorial(n - 1);
+  return n-- * factorial(n);
 }
-// Fibonacci
-function getFibonacci(n, def = 0) {
-	return n <= 1 ? n : getFibonacci(n - 1) + getFibonacci(n - 2);
-}
+console.log(factorial(5));
 
-console.log(getFibonacci(3)); // 2
-console.log(getFibonacci(7)); // 13
-console.log(getFibonacci(77)); // 5527939700884757
+function factorialTail(n, acc = 1) {
+  if (n === 1) return acc;
+
+  return factorialTail(n - 1, acc * n);
+}
+console.log(factorialTail(5));
+
+/* Сумма элементов + Хвостовая сумма элементов */
+function arraySum(arr) {
+  if (arr.length === 0) return 0;
+
+  return arr[0] + arraySum(arr.slice(1));
+}
+console.log("arraySum:", arraySum([1, 2, 3, 4, 5]));
+
+function arraySumTail(arr, accumulator = 0) {
+  if (arr.length === 0) return 0;
+
+  return arraySumTail(arr.slice(1), accumulator + arr[0]);
+}
+console.log("arraySumTail:", arraySumTail([1, 2, 3, 4, 5]));
