@@ -72,3 +72,4 @@ const byField = k => {
 
 console.log(users.sort(byField("name")));
 console.log(users.sort(byField("age")));
+
