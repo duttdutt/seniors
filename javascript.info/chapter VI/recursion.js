@@ -1,3 +1,4 @@
+/* --------------------------------------------------------------- */
 /** Разворачиваем вложенные массивы без flat()
  * flatten(1, [2, 3], 4, 5, [6, [7]]) // returns [1, 2, 3, 4, 5, 6, 7]
  * flatten('a', ['b', 2], 3, null, [[4], ['c']]) // returns ['a', 'b', 2, 3, null, 4, 'c']
@@ -9,7 +10,7 @@ function flatten(...args) {
     []
   );
 }
-// Через 'стек'
+// Через стек
 function flatten(...args) {
   const result = [];
 
@@ -27,6 +28,7 @@ function flatten(...args) {
   return result;
 }
 
+/* --------------------------------------------------------------- */
 /** Глубокое копирование объекта */
 const object = {
   a: 1,
@@ -55,6 +57,7 @@ function deepCopy(object) {
 
 console.log(object === deepCopy(object));
 
+/* --------------------------------------------------------------- */
 // Снижает нагрузку на стек вызовов и предотвращает переполнение стека
 /* Факториал + Хвостовый факториал */
 function factorial(n) {
@@ -71,6 +74,7 @@ function factorialTail(n, acc = 1) {
 }
 console.log(factorialTail(5));
 
+/* --------------------------------------------------------------- */
 /* Сумма элементов + Хвостовая сумма элементов */
 function arraySum(arr) {
   if (arr.length === 0) return 0;
@@ -85,3 +89,62 @@ function arraySumTail(arr, accumulator = 0) {
   return arraySumTail(arr.slice(1), accumulator + arr[0]);
 }
 console.log("arraySumTail:", arraySumTail([1, 2, 3, 4, 5]));
+
+/* --------------------------------------------------------------- */
+function getStringCount(input, count = 0) {
+  if (Array.isArray(input)) {
+    for (const el of input) {
+      if (typeof el === "string") {
+        count++;
+      } else {
+        count = getStringCount(el, count);
+      }
+    }
+  } else {
+    for (const prop in input) {
+      if (typeof input[prop] === "string") {
+        count++;
+      } else {
+        debugger;
+        count = getStringCount(input[prop], count);
+      }
+    }
+  }
+
+  return count;
+}
+
+console.log(
+  "getStringCount(obj)",
+  getStringCount({
+    first: "1",
+    second: { prop: "2" },
+    third: false,
+    fourth: ["anytime", 2, 3, 4],
+    fifth: null,
+  })
+); // 3
+
+console.log("getStringCount(arr)", getStringCount(["1", "2", ["6"], 4])); // 3
+
+/* --------------------------------------------------------------- */
+function sequenceSum(begin, end, sum = begin) {
+  // checks
+  if (begin > end) return NaN;
+  if (begin === end && begin === 0 && sum === begin) return 0;
+  if (begin === end && begin > 0 && sum === begin) return begin;
+
+  // base case
+  if (begin === end) return sum;
+
+  sum += begin + 1;
+
+  return sequenceSum(++begin, end, sum);
+}
+
+console.log(sequenceSum(1, 5)); // 1 + 2 + 3 + 4 + 5 = 15
+console.log(sequenceSum(4, 10)); // 4 + 5 + 6 + 7 + 8 + 9 + 10 = 49
+console.log(sequenceSum(-3, 2)); // (-3) + (-2) + (-1) + 0 + 1 + 2 - -3
+console.log(sequenceSum(7, 2)); // NaN (т.к. это "пустая" последовательность)
+console.log(sequenceSum(0, 0)); // 0 (т.к. это единственное число, входящее в последовательность)
+console.log(sequenceSum(6, 6)); // 6 (т.к. это единственное число, входящее в последовательность)
