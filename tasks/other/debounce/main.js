@@ -12,53 +12,53 @@ const inputThrottle = document.getElementById("input-throttle");
 const buttonThrottle = document.getElementById("button-throttle");
 const outputThrottle = document.getElementById("output-throttle");
 
-/* --- Default Event --- */
+/* --- 1. Default Event --- */
 buttonDefault.addEventListener("click", () => {
-    outputDefault.textContent = "";
-    outputDefault.textContent = inputDefault.value;
+  outputDefault.textContent = "";
+  outputDefault.textContent = inputDefault.value;
 });
 
-/* --- Debounce Function --- */
+/* --- 2. Debounce Function --- */
 function debounce(func, duration) {
-    let timeout;
+  let timeout;
 
-    return function (...args) {
-        const effect = () => {
-            timeout = null;
-            return func.apply(this, args);
-        };
-
-        clearTimeout(timeout);
-        timeout = setTimeout(effect, duration);
+  return function (...args) {
+    const effect = () => {
+      timeout = null;
+      return func.apply(this, args);
     };
+
+    clearTimeout(timeout);
+    timeout = setTimeout(effect, duration);
+  };
 }
 
 const debouncedEvent = debounce(() => {
-    outputDebounce.textContent = "";
-    outputDebounce.textContent = inputDebounce.value;
+  outputDebounce.textContent = "";
+  outputDebounce.textContent = inputDebounce.value;
 }, 1000);
 
 buttonDebounce.addEventListener("click", debouncedEvent);
 
-/* --- Throttle Function --- */
+/* --- 3. Throttle Function --- */
 function throttle(func, duration) {
-    let shouldWait = false;
+  let shouldWait = false;
 
-    return function (...args) {
-        if (!shouldWait) {
-            func.apply(this, args);
-            shouldWait = true;
+  return function (...args) {
+    if (!shouldWait) {
+      func.apply(this, args);
+      shouldWait = true;
 
-            setTimeout(function () {
-                shouldWait = false;
-            }, duration);
-        }
-    };
-};
+      setTimeout(function () {
+        shouldWait = false;
+      }, duration);
+    }
+  };
+}
 
 const throttledEvent = throttle(() => {
-    outputThrottle.textContent = "";
-    outputThrottle.textContent = inputThrottle.value;
-}, 2000)
+  outputThrottle.textContent = "";
+  outputThrottle.textContent = inputThrottle.value;
+}, 2000);
 
-buttonThrottle.addEventListener("click", throttledEvent)
+buttonThrottle.addEventListener("click", throttledEvent);
