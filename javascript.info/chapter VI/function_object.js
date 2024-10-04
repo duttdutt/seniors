@@ -1,5 +1,5 @@
 function foo() {
-    return 1;
+  return 1;
 }
 
 console.log(typeof foo); // function
@@ -9,22 +9,21 @@ console.log(foo.valueOf()()); // 1
 
 /* caller property */
 function myFunc() {
-    if (myFunc.caller === null)
-        return "The function was called from the top!";
-    else return `This function's caller was ${myFunc.caller}`;
+  if (myFunc.caller === null) return "The function was called from the top!";
+  else return `This function's caller was ${myFunc.caller}`;
 }
 
 // This function's caller was function `a() { return myFunc(); }`
 console.log(
-    (function a() {
-        return myFunc();
-    })()
+  (function a() {
+    return myFunc();
+  })()
 );
 // The function was called from the top!
 console.log(
-    (function a() {
-        return myFunc;
-    })()()
+  (function a() {
+    return myFunc;
+  })()()
 );
 
 /* name property */
@@ -39,7 +38,7 @@ const variableExpression = function functionExp() {};
 console.log(variableExpression.name); // 'functionExp'
 
 const someObject = {
-    method: () => {}
+  method: () => {},
 };
 console.log(someObject.method.name); // 'method'
 
@@ -54,36 +53,36 @@ console.log(function f(a, b, ...rest) {}.length); // 2, rest не учитыва
 
 /* can't change name and length properties */
 {
-    function f(a, b, c) {
-        return a + b + c;
-    }
+  function f(a, b, c) {
+    return a + b + c;
+  }
 
-    f.length = 0;
-    console.log(f.length); // 3, длина не изменилось
+  f.length = 0;
+  console.log(f.length); // 3, длина не изменилось
 }
 {
-    function f() {}
-    console.log(f.name); // 'f'
-    f.name = "F";
-    // F.name; // Error
-    console.log(f.name); // 'f'
+  function f() {}
+  console.log(f.name); // 'f'
+  f.name = "F";
+  // F.name; // Error
+  console.log(f.name); // 'f'
 }
 
 /* custom properties */
 {
-    function f() {}
+  function f() {}
 
-    f.prop2 = { a: { b: 1 } };
-    console.log(f.prop2.a.b); // 1
+  f.prop2 = { a: { b: 1 } };
+  console.log(f.prop2.a.b); // 1
 
-    for (const prop in f) {
-        console.log(f[prop]); // prop2: { a: {...} }
-    }
+  for (const prop in f) {
+    console.log(f[prop]); // prop2: { a: {...} }
+  }
 }
 
 // Invokation counter
 function makeCounter() {
-    return ++makeCounter.counter;
+  return ++makeCounter.counter;
 }
 makeCounter.counter = 0;
 
@@ -94,11 +93,11 @@ console.log(makeCounter.counter); // 3
 
 // Property versus closure
 function createClickCounter() {
-    return {
-        increment() {
-            return ++createClickCounter.count;
-        }
-    };
+  return {
+    increment() {
+      return ++createClickCounter.count;
+    },
+  };
 }
 createClickCounter.count = 0;
 
@@ -118,87 +117,87 @@ console.log(a.name); // 'a'
 console.log(b.name); // 'f'
 
 {
-    let bar = function foo(status) {
-        // (*)
-        if (status === "Guest") {
-            console.log("Guest, you are logged.");
-        } else if (status === "Admin") {
-            console.log("Hello, Admin!");
-        } else {
-            /* не работает, пойдет искать в глобальный контекст,
+  let bar = function foo(status) {
+    // (*)
+    if (status === "Guest") {
+      console.log("Guest, you are logged.");
+    } else if (status === "Admin") {
+      console.log("Hello, Admin!");
+    } else {
+      /* не работает, пойдет искать в глобальный контекст,
         где bar = null */
-            // bar("Guest");
-            console.log("Reinvoking...");
-            foo("Guest");
-            return "Reinvoked!"
-        }
-    };
+      // bar("Guest");
+      console.log("Reinvoking...");
+      foo("Guest");
+      return "Reinvoked!";
+    }
+  };
 
-    let ref = bar; // Создали новую ссылку
-    bar = null; // Обнулили изначальную ссылку
+  let ref = bar; // Создали новую ссылку
+  bar = null; // Обнулили изначальную ссылку
 
-    console.log(ref()); // "Guest, you are logged."
+  console.log(ref()); // "Guest, you are logged."
 }
 
 /* ========================= Tasks ========================== */
-Установка и уменьшение значения счётчика
-Измените код makeCounter() так, чтобы счётчик мог уменьшать и устанавливать значение:
-- counter() должен возвращать следующее значение (как и раньше).
-- counter.set(value) должен устанавливать счётчику значение value.
-- counter.decrease() должен уменьшать значение счётчика на 1.
+// Установка и уменьшение значения счётчика
+// Измените код makeCounter() так, чтобы счётчик мог уменьшать и устанавливать значение:
+// - counter() должен возвращать следующее значение (как и раньше).
+// - counter.set(value) должен устанавливать счётчику значение value.
+// - counter.decrease() должен уменьшать значение счётчика на 1.
 {
-    function makeCounter() {
-        counter.count = 0;
+  function makeCounter() {
+    counter.count = 0;
 
-        function counter() {
-            return ++counter.count;
-        };
-
-        counter.set = function(v) {
-            counter.count = v;
-        }
-
-        counter.decrease = function () {
-            return --counter.count;
-        }
-
-        return counter;
+    function counter() {
+      return ++counter.count;
     }
 
-    let counter = makeCounter();
-    console.log(counter.count); // 0
-    counter();
-    counter();
-    counter();
-    counter();
-    console.log(counter.count); // 4
-    counter.set(0);
-    console.log(counter.count); // 0
-    counter.decrease();
-    counter.decrease();
-    counter.decrease();
-    console.log(counter.count); // -3
+    counter.set = function (v) {
+      counter.count = v;
+    };
+
+    counter.decrease = function () {
+      return --counter.count;
+    };
+
+    return counter;
+  }
+
+  let counter = makeCounter();
+  console.log(counter.count); // 0
+  counter();
+  counter();
+  counter();
+  counter();
+  console.log(counter.count); // 4
+  counter.set(0);
+  console.log(counter.count); // 0
+  counter.decrease();
+  counter.decrease();
+  counter.decrease();
+  console.log(counter.count); // -3
 }
 
 // Напишите функцию sum, которая бы работала следующим образом:
 {
-    function sum(a) {
-        let currentSum = a;
+  function sum(a) {
+    let currentSum = a;
 
-        function innerSum(b) {
-            currentSum += b;
-            return innerSum;
-        }
-
-        innerSum[Symbol.toPrimitive] = function () {
-            return currentSum;
-        };
-
-        return innerSum;
+    function innerSum(b) {
+      currentSum += b;
+      return innerSum;
     }
 
-    console.log(sum(1)(2)(3) == 6);
-    console.log(sum(5)(-1)(2) == 6);
-    console.log(sum(6)(-1)(-2)(-3) == 0);
-    console.log(sum(0)(1)(2)(3)(4)(5) == 15);
+    innerSum[Symbol.toPrimitive] = function () {
+      return currentSum;
+    };
+
+    return innerSum;
+  }
+
+  console.log(sum(1)(2)(3) == 6);
+  console.log(sum(5)(-1)(2) == 6);
+  console.log(sum(6)(-1)(-2)(-3) == 0);
+  console.log(sum(0)(1)(2)(3)(4)(5) == 15);
 }
