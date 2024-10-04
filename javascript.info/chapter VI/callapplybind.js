@@ -1,5 +1,6 @@
 let user = { name: "John" };
 let admin = { name: "Admin" };
+
 /* ----- .call(context, args) realization ----- */
 function sayHi(a, b, c) {
   console.log("this.name:", this.name);
@@ -17,6 +18,7 @@ Function.prototype.myCall = function (context, ...args) {
 
 sayHi.myCall(user, 3, 2, 1);
 sayHi.myCall(admin, 3, 2, 1);
+
 /* ----- .apply(context, args) realization ----- */
 function sayHi(...args) {
   console.log("this.name:", this.name);
@@ -34,6 +36,18 @@ Function.prototype.myApply = function (context, args) {
 
 sayHi.apply(user, [1, 2, 3]);
 sayHi.apply(admin, [1, 2, 3]);
+
+/* ----- .bind(context, args) realization  */
+Function.prototype.mybind = function (context, ...args1) {
+  const fn = this;
+  return function (...args2) {
+      fn.apply(context, [...args1, ...args2]);
+  };
+};
+
+
+
+
 
 /* ----- TASKS FROM LEARN.JS ----- */
 // Создайте декоратор spy(func), который должен возвращать обёртку, которая
