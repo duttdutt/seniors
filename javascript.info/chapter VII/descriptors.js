@@ -14,9 +14,9 @@ obj.testProp = 345;
 obj.logTestProp(); // expect 345
 
 /* Задача 2. Минимальные и максимальные значения для свойства 0-10 */
-let obj = { _a: 1 };
+let obj2 = { _a: 1 };
 
-Object.defineProperty(obj, "a", {
+Object.defineProperty(obj2, "a", {
   get() {
     return this._a;
   },
@@ -31,9 +31,9 @@ Object.defineProperty(obj, "a", {
 });
 
 /* Задача 3. Счетчик доступа к свойству */
-let obj = {};
+let obj3 = {};
 
-Object.defineProperty(obj, "prop", {
+Object.defineProperty(obj3, "prop", {
   get() {
     if (typeof this._countGet === "undefined")
       this._countGet = 0;
@@ -89,4 +89,60 @@ Object.defineProperty(person, "age", {
   get() {
     return new Date().getFullYear() - this.birthYear;
   }
-})
+});
+console.log("------------");
+
+const objCheck = {
+  c: 2,
+  d: 4
+}
+Object.defineProperties(obj, {
+  a: { enumerable: false },
+  b: { enumerable: false }
+});
+for (const prop in objCheck) {
+  console.log(prop); // null
+}
+console.log("Object.keys(objCheck) if enumerable:", Object.keys(objCheck)); // []
+console.log("------------");
+
+/* --- Object static methods --- */
+{ /* Object.preventExtensions(obj) - запретить добавление новый свойств */
+  const obj = { a: 1 };
+  Object.preventExtensions(obj);
+
+  obj.a = 1;
+  console.log("obj before deleting a:", obj); // не изменился
+  delete obj.a;
+  console.log("obj after deleting a:", obj); // не запрещает удалять
+  // Object.defineProperty(obj, 'a', { value: 1 }); // Cannot define property a, object is not extensible
+  // ошибка при создании св-ва через дескриптор
+  /* Object.isExtensible(obj) - проверяет, можно ли добавлять свойства */
+  console.log("Object.isExtensible(obj):", Object.isExtensible(obj)); // false
+  console.log("------------");
+}
+{ /* Object.seal(obj) */
+  const obj = {
+    a: 1,
+    b: 2
+  }
+
+  console.log("Descriptors of obj.a before sealing:", Object.getOwnPropertyDescriptor(obj, 'a'));
+  // { value: 1, writable: true, enumerable: true, configurable: true }
+
+  Object.seal(obj); // configurable -> false
+
+  console.log("Descriptors of obj.a after sealing:", Object.getOwnPropertyDescriptor(obj, 'a'));
+  // { value: 1, writable: true, enumerable: true, configurable: false }
+  /* Object.isSealed(obj) */
+  console.log("Object.isSealed(obj):", Object.isSealed(obj)); // true, obj is sealed
+  console.log("------------");
+}
+{ /* Object.freeze(obj) замораживает объект напрочь(writable: false, +Object.seal(configurable: false) */
+  const obj = { a: 1, b: 2 };
+  console.log("Descriptors before freeze:", Object.getOwnPropertyDescriptors(obj));
+  Object.freeze(obj);
+  console.log("Descriptors after freeze:", Object.getOwnPropertyDescriptors(obj)); // writable+configurable -> false
+  /* Object.isFrozen(obj) */
+  console.log("Object.isFrozen(obj):", Object.isFrozen(obj));
+}
