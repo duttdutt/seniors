@@ -109,7 +109,9 @@ console.log("------------");
 /* --- Object static methods --- */
 { /* Object.preventExtensions(obj) - запретить добавление новый свойств */
   const obj = { a: 1 };
+  console.log("kek:", Object.getOwnPropertyDescriptors(obj));
   Object.preventExtensions(obj);
+  console.log("lol:", Object.getOwnPropertyDescriptors(obj));
 
   obj.a = 1;
   console.log("obj before deleting a:", obj); // не изменился
@@ -146,3 +148,18 @@ console.log("------------");
   /* Object.isFrozen(obj) */
   console.log("Object.isFrozen(obj):", Object.isFrozen(obj));
 }
+
+// Object -> Test1 -> Test2
+function Test2() {
+  this.name = 'Vasya';
+  this.surname = 'Petrov';
+}
+Test2.prototype.getFullName = function () {
+  getFullName() {
+    return this.name + ' ' + this.surname;
+  }
+}
+
+new Test2().__proto__ // Test2.prototype
+new Test2().__proto__.prototype
+new Test2().__proto__.__proto__
