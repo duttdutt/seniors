@@ -25,8 +25,8 @@
 #### October
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
-- _7kyu_: 0 entries
-- **Total**: 1 entries
+- _7kyu_: 3 entries
+- **Total**: 4 entries
 
 ### 5kyu
 
