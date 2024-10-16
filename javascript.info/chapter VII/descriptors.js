@@ -155,9 +155,7 @@ function Test2() {
   this.surname = 'Petrov';
 }
 Test2.prototype.getFullName = function () {
-  getFullName() {
-    return this.name + ' ' + this.surname;
-  }
+  return this.name + ' ' + this.surname;
 }
 
 new Test2().__proto__ // Test2.prototype
