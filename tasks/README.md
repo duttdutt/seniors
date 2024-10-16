@@ -1,7 +1,7 @@
 # Seniors
 
 <details>
-  <summary style="font-size: 20px">JavaScript.info</summary>
+  <summary>JavaScript.info</summary>
 
 - [ ] [chapter II](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20II)
 - [x] [chapter IV](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IV)
@@ -13,10 +13,11 @@
 </details>
 
 <details>
-  <summary style="font-size: 20px;color: #BB432C">Codewars</summary>
+  <summary>Codewars</summary>
 
 <details>
-  <summary style="font-size: 15px;color: #0000FF">August, Total: 16<strong>(normal)</strong></summary>
+
+  <summary>August, Total: 16<strong>(normal)</strong></summary>
 
 - _5kyu_: 2 entries
 - _6kyu_: 8 entries
@@ -25,7 +26,7 @@
 </details>
 
 <details>
-  <summary style="font-size: 15px;color: #E50000">September, total: 9<strong>(bad)</strong></summary>
+  <summary>September, total: 9<strong>(bad)</strong></summary>
 
   - _5kyu_: 2 entry
   - _6kyu_: 2 entries
@@ -34,7 +35,7 @@
 </details>
 
 <details>
-  <summary style="font-size: 15px;color: #E50000">October, total: 4</summary>
+  <summary>October, total: 4</summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
@@ -88,12 +89,7 @@
 
 
 <details>
-  <summary
-    style="
-      font-size: 20px;
-      color: #008000
-    "
-  >
+  <summary>
     <a href="https://t.me/jsgrill" style="color: #008000; text-decoration: underline">
       JS-прожарка
     </a>
