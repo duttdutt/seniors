@@ -8,7 +8,7 @@
 - [x] [chapter VI](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VI)
 - [ ] [chapter VII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VII)
 - [ ] [chapter VIII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VIII)
-- [ ] [chapter IX]()
+- [ ] [chapter IX](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IX)
 
 ## Codewars
 ### By month
@@ -26,7 +26,7 @@
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
 - _7kyu_: 0 entries
-- **Total**: 0 entries
+- **Total**: 1 entries
 
 ### 5kyu
 
