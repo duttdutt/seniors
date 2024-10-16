@@ -14,9 +14,7 @@
 
 <details>
   <summary>Codewars</summary>
-
-<details><br>
-
+<details>
   <summary>August, Total: 16<strong>(normal)</strong></summary>
 
 - _5kyu_: 2 entries
@@ -24,7 +22,6 @@
 - _7kyu_: 6 entries
 
 </details>
-
 <details>
   <summary>September, total: 9<strong>(bad)</strong></summary>
 
@@ -33,7 +30,6 @@
   - _7kyu_: 5 entries
 
 </details>
-
 <details>
   <summary>October, total: 4</summary>
 
@@ -42,8 +38,6 @@
 - _7kyu_: 3 entries
 
 </details>
-
-
 <details>
   <summary>All entries</summary>
 
