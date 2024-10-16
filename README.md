@@ -5,7 +5,10 @@
 - [ ] [chapter II](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20II)
 - [x] [chapter IV](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IV)
 - [x] [chapter V](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20V)
-- [ ] [chapter VI](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VI)
+- [x] [chapter VI](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VI)
+- [ ] [chapter VII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VII)
+- [ ] [chapter VIII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VIII)
+- [ ] [chapter IX]()
 
 ## Codewars
 ### By month
@@ -19,6 +22,11 @@
 - _6kyu_: 2 entries
 - _7kyu_: 5 entries
 - **Total**: 9 entries
+#### October
+- _5kyu_: 0 entry
+- _6kyu_: 1 entries
+- _7kyu_: 0 entries
+- **Total**: 0 entries
 
 ### 5kyu
 
@@ -40,6 +48,7 @@
 - [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836) 14 September
 - [Array Diff](https://www.codewars.com/kata/523f5d21c841566fde000009) 14 September
 - [Polish Notation](https://www.codewars.com/kata/5e5b7f55c2e8ae0016f42339) 23 September
+- [Array Diff](https://www.codewars.com/kata/523f5d21c841566fde000009/) 14 October
 
 ### 7kyu
 
