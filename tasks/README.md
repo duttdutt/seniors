@@ -15,7 +15,7 @@
 <details>
   <summary>Codewars</summary>
 
-<details>
+<details><br>
 
   <summary>August, Total: 16<strong>(normal)</strong></summary>
 
