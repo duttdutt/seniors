@@ -3,12 +3,6 @@
 // Нужно прибавить единичку к этому числу и вернуть результат.
 // Если числа нет, то будем считать, что оно равно нулю. 
 // На примере с кодом будет понятнее, 
-/**
- * Increments the number at the end of a given string.
- *
- * @param {string} str The string to increment the number at the end of.
- * @returns {string} The string with the number at the end incremented.
- */
 const incrementNumberAtEndOfString = (str: string): string => {
     const reversedString: string = str.split("").reverse().join("");
 
