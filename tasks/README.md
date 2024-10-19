@@ -31,11 +31,11 @@
 
 </details>
 <details>
-  <summary>October, total: 4</summary>
+  <summary>October, total: 5</summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
-- _7kyu_: 3 entries
+- _7kyu_: 4 entries
 
 </details>
 <details>
