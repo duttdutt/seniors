@@ -92,14 +92,19 @@
 - _15 October_: 4 entries
   - 2 отлично(решил сам),
   - 1 хорошо(попросил чатик подсобить с реализацией(без кода, только текст))
-  - 0 нормально(знатно распросил чатик + был код от него)
+  - 0 нормально(знатно распросил чатик + был код от него/подглядел в решения)
   - 1 плохо(без шансов)
 - _16 October_: 1 entry
   - 1 отлично(решил сам)
+- _19 October_: 2 entries
+  - 3 нормально(знатно распросил чатик/подглядел в решения)
 
 - [Task 0](https://t.me/jsgrill/23) 15 October, отлично
 - [Task 1](https://t.me/jsgrill/26) 15 October, плохо
 - [Task 2](https://t.me/jsgrill/27) 15 October, нормально
 - [Task 3](https://t.me/jsgrill/28) 15 October, отлично
-- [Task 4](https://t.me/jsgrill/30) 16 October, отлично
+- [Task 5](https://t.me/jsgrill/30) 16 October, отлично
+- [Task 7](https://t.me/jsgrill/32) 19 October, нормально
+- [Task 9](https://t.me/jsgrill/35) 19 October, нормально
+- [Task 10](https://t.me/jsgrill/37) 19 October, нормально
 </details>
