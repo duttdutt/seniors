@@ -40,6 +40,15 @@
 - _7kyu_: 4 entries
 
 </details>
+
+<details>
+  <summary>November, total: 0</summary>
+
+- _5kyu_: 0 entry
+- _6kyu_: 0 entries
+- _7kyu_: 0 entries
+
+</details>
 <details>
   <summary>All entries</summary>
 
