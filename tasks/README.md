@@ -10,7 +10,8 @@
 - [x] [chapter VII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VII)
 - [x] [chapter VIII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VIII)
 - [x] [chapter IX](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IX)
-- [ ] [chapter X]()
+- [ ] [chapter X](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20X)
+- [ ] [chapter XI](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20XI)
 </details>
 
 <details>
