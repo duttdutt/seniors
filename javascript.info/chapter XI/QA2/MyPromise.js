@@ -106,3 +106,23 @@ Object.setPrototypeOf(MyPromise, Function.prototype)
 const promise = new MyPromise((resolve, reject) => {
     resolve(1)
 })
+
+async function getState(promise) {
+    const settled = Promise.allSettled([promise])
+
+    let result = ''
+
+    await settled.then(res => console.log('res', res))
+
+    let promiseAwait = settled.then(res => {
+        res.map(promise => {
+            result += promise.status
+        })
+    })
+
+    return result
+}
+
+const promise1 = new Promise((res, rej) => {})
+
+console.log(getState(promise1))

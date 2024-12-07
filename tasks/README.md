@@ -10,7 +10,7 @@
 - [x] [chapter VII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VII)
 - [x] [chapter VIII](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20VIII)
 - [x] [chapter IX](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20IX)
-- [ ] [chapter X](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20X)
+- [x] [chapter X](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20X)
 - [ ] [chapter XI](https://github.com/duttdutt/seniors/tree/main/javascript.info/chapter%20XI)
 </details>
 
@@ -42,10 +42,10 @@
 </details>
 
 <details>
-  <summary>November, total: 0</summary>
+  <summary>November, total: 1</summary>
 
 - _5kyu_: 0 entry
-- _6kyu_: 0 entries
+- _6kyu_: 1 entries
 - _7kyu_: 0 entries
 
 </details>
