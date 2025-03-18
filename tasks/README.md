@@ -109,6 +109,7 @@
 * [Array Diff](https://www.codewars.com/kata/523f5d21c841566fde000009) 14 October, 2024
 * [Custom Array Filter](https://www.codewars.com/kata/53fc954904a45eda6b00097f) 3 March, 2025
 * [Who Likes it](https://www.codewars.com/kata/5266876b8f4bf2da9b000362) 19 March, 2025
+* [Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001) 19 March, 2025
 
 ### 7kyu
 
