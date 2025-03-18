@@ -91,6 +91,7 @@
 * [DirectionsReduction](https://www.codewars.com/kata/550f22f4d758534c1100025a) 19 August, 2024
 * [Moving Zeros to End](https://www.codewars.com/kata/52597aa56021e91c93000cb0) 14 September, 2024
 * [Flatten](https://www.codewars.com/kata/513fa1d75e4297ba38000003) 23 September, 2024
+* [The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024) 19 Match, 2025
 
 ### 6kyu
 
