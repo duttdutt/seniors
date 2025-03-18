@@ -91,7 +91,7 @@
 * [DirectionsReduction](https://www.codewars.com/kata/550f22f4d758534c1100025a) 19 August, 2024
 * [Moving Zeros to End](https://www.codewars.com/kata/52597aa56021e91c93000cb0) 14 September, 2024
 * [Flatten](https://www.codewars.com/kata/513fa1d75e4297ba38000003) 23 September, 2024
-* [The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024) 19 Match, 2025
+* [The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024) 19 March, 2025
 
 ### 6kyu
 
@@ -108,6 +108,7 @@
 * [Polish Notation](https://www.codewars.com/kata/5e5b7f55c2e8ae0016f42339) 23 September, 2024
 * [Array Diff](https://www.codewars.com/kata/523f5d21c841566fde000009) 14 October, 2024
 * [Custom Array Filter](https://www.codewars.com/kata/53fc954904a45eda6b00097f) 3 March, 2025
+* [Who Likes it](https://www.codewars.com/kata/5266876b8f4bf2da9b000362) 19 March, 2025
 
 ### 7kyu
 
