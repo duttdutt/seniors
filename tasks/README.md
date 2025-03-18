@@ -111,6 +111,7 @@
 - [Who Likes it](https://www.codewars.com/kata/5266876b8f4bf2da9b000362) 19 March, 2025
 - [Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001) 19 March, 2025
 - [Dublicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c) 19 March, 2025
+- [Find The Parity Outliner](https://www.codewars.com/kata/5526fc09a1bbd946250002dc) 19 March, 2025
 
 ### 7kyu
 
