@@ -45,7 +45,7 @@
   </details>
 
   <details>
-  <summary>November, total: 1<strong>(bad)</strong></summary>
+  <summary>November, total: 1<strong>(awful)</strong></summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
@@ -53,7 +53,7 @@
 
   </details>
   <details>
-  <summary>December, total: 0<strong>(bad)</strong></summary>
+  <summary>December, total: 0<strong>(awful)</strong></summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 0 entries
@@ -65,7 +65,7 @@
   <!-- ============= 2025 ============= -->
   <summary>2025</summary>
   <details>
-  <summary>January 2025, total: 0<strong>(bad)</strong></summary>
+  <summary>January 2025, total: 0<strong>(awful)</strong></summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 0 entries
@@ -73,10 +73,19 @@
 
   </details>
   <details>
-  <summary>Ongoing: February 2025, total: 2<strong>(bad)</strong></summary>
+  <summary>February 2025, total: 2<strong>(bad)</strong></summary>
 
 - _5kyu_: 0 entry
 - _6kyu_: 1 entries
+- _7kyu_: 1 entries
+
+  </details>
+
+  <details>
+  <summary>March 2025, total: 7<strong>(bad)</strong></summary>
+
+- _5kyu_: 1 entry
+- _6kyu_: 5 entries
 - _7kyu_: 1 entries
 
   </details>
@@ -112,6 +121,8 @@
 - [Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001) 19 March, 2025
 - [Dublicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c) 19 March, 2025
 - [Find The Parity Outliner](https://www.codewars.com/kata/5526fc09a1bbd946250002dc) 19 March, 2025
+- [Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091) 20 March, 2025
+- [Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2) 20 March, 2025
 
 ### 7kyu
 
