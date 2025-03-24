@@ -23,3 +23,19 @@
 - [ ] [Parameters](https://github.com/type-challenges/type-challenges/blob/main/questions/03312-easy-parameters/README.md)
 - [ ] [Get Return Type](https://github.com/type-challenges/type-challenges/blob/main/questions/00002-medium-return-type/README.md)
 - [ ] [Omit](https://github.com/type-challenges/type-challenges/blob/main/questions/00003-medium-omit/README.md)
+
+### Saturday, 15 March
+
+- [ ] [Readonly](https://github.com/type-challenges/type-challenges/blob/main/questions/00008-medium-readonly-2/README.md)
+- [ ] [Deep Readonly](https://github.com/type-challenges/type-challenges/blob/main/questions/00009-medium-deep-readonly/README.md)
+- [ ] [Tuple to Union](https://github.com/type-challenges/type-challenges/blob/main/questions/00010-medium-tuple-to-union/README.md)
+- [ ] [Chainable Options](https://github.com/type-challenges/type-challenges/blob/main/questions/00012-medium-chainable-options/README.md)
+- [ ] [Last of Array](https://github.com/type-challenges/type-challenges/blob/main/questions/00015-medium-last/README.md)
+
+### Sunday, 16 March
+
+- [ ] [Pop](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.md)
+- [ ] [Promise.all](https://github.com/type-challenges/type-challenges/blob/main/questions/00020-medium-promise-all/README.md)
+- [ ] [Type Lookup](https://github.com/type-challenges/type-challenges/blob/main/questions/00062-medium-type-lookup/README.md)
+- [ ] [Trim Left](https://github.com/type-challenges/type-challenges/blob/main/questions/00106-medium-trimleft/README.md)
+- [ ] [Trim](https://github.com/type-challenges/type-challenges/blob/main/questions/00108-medium-trim/README.md)

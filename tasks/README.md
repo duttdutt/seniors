@@ -82,7 +82,7 @@
   </details>
 
   <details>
-  <summary>March 2025, total: 7<strong>(bad)</strong></summary>
+  <summary>March 2025, total: 9<strong>(normal)</strong></summary>
 
 - _5kyu_: 1 entry
 - _6kyu_: 5 entries
@@ -123,6 +123,9 @@
 - [Find The Parity Outliner](https://www.codewars.com/kata/5526fc09a1bbd946250002dc) 19 March, 2025
 - [Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091) 20 March, 2025
 - [Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2) 20 March, 2025
+- [Mexican Wave](https://www.codewars.com/kata/58f5c63f1e26ecda7e000029) 24 March, 2025
+- [The Supermarket Queue](https://www.codewars.com/kata/57b06f90e298a7b53d000a86) 24 March, 2025
+- [WeIrD StRiNg CaSe](https://www.codewars.com/kata/52b757663a95b11b3d00062d) 24 March, 2025
 
 ### 7kyu
 
